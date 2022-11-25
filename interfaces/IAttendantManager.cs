@@ -1,0 +1,13 @@
+
+public interface IAttendantManager
+{
+    void CreateAttendant(int id, string firstName, string lastName, string email, string phoneNumber, string pin, string post);
+    Attendant GetAttendant(string staffId);
+    Attendant GetAttendant(string staffId, string email);
+    void UpdateAttendant(string staffId, string firstName, string lastName, string phoneNumber);
+    void DeleteAttendant(string staffId);
+    Attendant Login(string staffId, string pin);
+    void ViewAllAttendants();
+    void UpdateAttendantPassword(string staffId, string pin);
+
+}
