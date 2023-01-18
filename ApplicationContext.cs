@@ -9,7 +9,6 @@ namespace SMS
         {
             optionsBuilder.UseMySql("SERVER=localhost; User Id=root; Password=1234; DATABASE=amaster",new MySqlServerVersion(new Version("8.0.29")));
         }
-        public DbSet<Students> Students {get;set;}
         public DbSet<Product> Products {get;set;}
         public DbSet<Attendant> Attendants {get;set;}
         public DbSet<Transactiona> Transactionas {get;set;}
